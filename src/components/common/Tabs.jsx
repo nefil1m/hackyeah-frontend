@@ -6,7 +6,7 @@ const TabContent = ({ index, children }) => (
   <Consumer>
     {({ isActive, activeTab }) => (
       isActive(index)
-        ? children
+        ? <div className="tab__content">{children}</div>
         : null
     )}
   </Consumer>

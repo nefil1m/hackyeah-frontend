@@ -1,3 +1,40 @@
 .education {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
 
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  &__main {
+    flex: 1;
+  }
+}
+
+.tabs {
+  &__main {
+    // flex: 1;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: $primary;
+
+    &-item {
+      flex-basis: 25%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      img {
+        max-width: 100%;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
 }

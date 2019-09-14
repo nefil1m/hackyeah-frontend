@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Initial from './Initial';
-import { Materials } from './Education';
+import { Materials, Butts } from './Education';
 
 export default () => (
   <Router>
