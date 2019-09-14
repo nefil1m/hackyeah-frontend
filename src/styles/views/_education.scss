@@ -1,8 +1,31 @@
 .education {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
+  color: #eee;
+  background: black;
+
+  &__background {
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:before {
+      content: '';
+      background-size: 100% 100%;
+      background-position: center center;
+      background-image: url('../../assets/trees.jpg');
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      animation-name: blush;
+      animation-iteration-count: 1;
+      animation-duration: 15s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+  }
 
   h1 {
     margin-bottom: 25px;
@@ -10,17 +33,20 @@
 
   &__main {
     flex: 1;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    overflow-y: auto;
   }
 }
 
 .tabs {
   &__background {
     position: relative;
-    background: black;
+    background: $primary;
 
     &:before {
       content: '';
-      background-image: url('../../assets/trees.jpg');
       background-size: cover;
       background-position: center center;
       position: absolute;
@@ -52,24 +78,33 @@
       text-align: center;
       color: #fff;
 
-      h4 {
+      h4, h5, h6 {
         margin-top: 10px;
       }
 
       &--active {
-        background-color: rgba(darken($primary, 10%), .1);
+        background-color: rgba(darken($secondary, 10%), .7);
       }
     }
   }
 }
 
 .thing {
-  background-color: $secondary;
-  width: 50%;
-  padding-bottom: 50%;
+  background-color: #fff;
+  width: 33%;
+  padding-bottom: 33%;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  color: $primary;
+  font-size: 24px;
+  font-weight: bold;
+
+  &:last-of-type {
+    font-size: 32px;
+    width: 50%;
+    padding-bottom: 50%;
+  }
 
   &__inner {
     position: absolute;
@@ -80,5 +115,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@keyframes blush {
+  from {
+    opacity: .1;
+    background-size: 100% 100%;
+  }
+
+  to {
+    opacity: .3;
+    background-size: 125% 125%;
   }
 }
