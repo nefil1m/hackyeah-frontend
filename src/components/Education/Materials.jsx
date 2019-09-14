@@ -1,21 +1,14 @@
 import React, { Fragment } from 'react';
 import { Provider, Consumer, TabContent } from '../common/Tabs';
 import { Image } from 'react-bootstrap';
-import trees from '../../assets/trees.jpg';
+import trees from '../../assets/trees2.jpg';
 import where from '../../assets/where.png'
 import what from '../../assets/what.png'
 import how from '../../assets/how.png'
 import why from '../../assets/why.png'
 import quiz from '../../data/quiz';
 import Quiz from './Quiz';
-
-const Thing = ({ children, big }) => (
-  <div className={`thing ${big ? 'thing--big' : ''}`}>
-    <div className="thing__inner">
-      {children}
-    </div>
-  </div>
-);
+import Thing from './Thing';
 
 const Materials = ({ history }) => (
   <main className="education">

@@ -52,7 +52,7 @@
 .tabs {
   &__background {
     position: relative;
-    background: $primary;
+    background: rgba(darken($primary, 30%), .7);
 
     &:before {
       content: '';
@@ -75,7 +75,11 @@
   &__nav {
     display: flex;
     align-items: center;
-    height: 200px;
+    height: 100px;
+
+    @include media-breakpoint-down(sm) {
+      height: 50px;
+    }
 
     &-item {
       flex-basis: 25%;
@@ -90,28 +94,38 @@
       transition: all .2s ease-out;
 
       h4, h5, h6 {
-        margin-top: 10px;
+        margin-top: 15px;
+
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
       }
 
       &:hover,
       &--active {
         .thing {
-          transform: scale(1.05);
+          transform: scale(1.1);
+          background-color: #fff;
+
+          &__hover {
+            transform: scale(1);
+            opacity: 1;
+          }
         }
 
-        background-color: rgba(darken($secondary, 10%), .7);
+        // background-color: rgba(darken($secondary, 10%), .7);
       }
     }
   }
 }
 
 .thing {
-  background-color: #fff;
+  background-color: rgba(#fff, .7);
   width: 33%;
   padding-bottom: 33%;
   border-radius: 50%;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   color: $primary;
   font-size: 24px;
   font-weight: bold;
@@ -133,6 +147,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+  }
+
+  img {
+    max-width: 60%;
+  }
+
+  &__hover {
+    $indent: -7px;
+
+    border: 3px solid #4eff76;
+    border-radius: 50%;
+    position: absolute;
+    top: $indent;
+    right: $indent;
+    bottom: $indent;
+    left: $indent;
+    transform: scale(0.01);
+    opacity: 0;
+    transition: all .2s ease-out;
   }
 }
 
