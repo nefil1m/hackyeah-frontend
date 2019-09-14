@@ -70,6 +70,18 @@
   }
 }
 
+.sign-in__link {
+  color: #fff;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .wrapper--initial {
     flex-direction: column;
