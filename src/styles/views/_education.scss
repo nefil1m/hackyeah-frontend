@@ -21,19 +21,26 @@
   &__nav {
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 200px;
     background-color: $primary;
 
     &-item {
       flex-basis: 25%;
       display: flex;
       justify-content: center;
-      align-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: #fff;
 
       img {
         max-width: 100%;
         width: 100px;
         height: 100px;
+      }
+
+      h4 {
+        margin-top: 10px;
       }
     }
   }

@@ -28,18 +28,30 @@ const Materials = () => (
               </div>
             </div>
 
-            <div className="tabs__nav">
-              <div className="tabs__nav-item" onClick={() => setActiveTab(0)}>
-                <Image roundedCircle src="https://source.unsplash.com/random" />
-              </div>
-              <div className="tabs__nav-item" onClick={() => setActiveTab(1)}>
-                <Image roundedCircle src="https://source.unsplash.com/random" />
-              </div>
-              <div className="tabs__nav-item" onClick={() => setActiveTab(2)}>
-                <Image roundedCircle src="https://source.unsplash.com/random" />
-              </div>
-              <div className="tabs__nav-item" onClick={() => setActiveTab(3)}>
-                <Image roundedCircle src="https://source.unsplash.com/random" />
+            <div className="bg-primary">
+              <div className="container">
+                <div className="tabs__nav">
+                  <div className="tabs__nav-item" onClick={() => setActiveTab(0)}>
+                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                    <h4>Shit 1</h4>
+                  </div>
+                  <div className="tabs__nav-item" onClick={() => setActiveTab(1)}>
+                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                    <h4>Shit 2</h4>
+                  </div>
+                  <div className="tabs__nav-item" onClick={() => setActiveTab(2)}>
+                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                    <h4>Shit 3</h4>
+                  </div>
+                  <div className="tabs__nav-item" onClick={() => setActiveTab(3)}>
+                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                    <h4>Shit 4</h4>
+                  </div>
+                  <div className="tabs__nav-item" onClick={() => setActiveTab(3)}>
+                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                    <h4>GO QUIZ!</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </Fragment>
