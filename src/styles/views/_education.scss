@@ -22,7 +22,7 @@
       animation-name: blush;
       animation-iteration-count: 1;
       animation-duration: 15s;
-      animation-timing-function: ease-out;
+      animation-timing-function: linear;
       animation-fill-mode: forwards;
     }
   }
@@ -36,7 +36,16 @@
     position: relative;
     z-index: 10;
     display: flex;
+    align-items: center;
     overflow-y: auto;
+
+    > * {
+      max-width: 80%;
+    }
+
+    p {
+      font-size: 18px;
+    }
   }
 }
 
@@ -77,12 +86,19 @@
       flex-direction: column;
       text-align: center;
       color: #fff;
+      cursor: pointer;
+      transition: all .2s ease-out;
 
       h4, h5, h6 {
         margin-top: 10px;
       }
 
+      &:hover,
       &--active {
+        .thing {
+          transform: scale(1.05);
+        }
+
         background-color: rgba(darken($secondary, 10%), .7);
       }
     }
@@ -99,11 +115,13 @@
   color: $primary;
   font-size: 24px;
   font-weight: bold;
+  transition: all .2s ease-out;
 
-  &:last-of-type {
+  &--big {
     font-size: 32px;
     width: 50%;
     padding-bottom: 50%;
+    background-color: #17e69a;
   }
 
   &__inner {
@@ -119,13 +137,16 @@
 }
 
 @keyframes blush {
+  $x: 3654px;
+  $y: 5473px;
+
   from {
     opacity: .1;
-    background-size: 100% 100%;
+    background-size: $x / 2 $y / 2;
   }
 
   to {
     opacity: .3;
-    background-size: 125% 125%;
+    background-size: $x / 1.75 $y / 1.75;
   }
 }

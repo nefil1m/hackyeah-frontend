@@ -3,8 +3,8 @@ import { Provider, Consumer, TabContent } from '../common/Tabs';
 import { Image } from 'react-bootstrap';
 import trees from '../../assets/trees.jpg';
 
-const Thing = ({ children }) => (
-  <div className="thing">
+const Thing = ({ children, big }) => (
+  <div className={`thing ${big ? 'thing--big' : ''}`}>
     <div className="thing__inner">
       {children}
     </div>
@@ -13,11 +13,11 @@ const Thing = ({ children }) => (
 
 const Materials = () => (
   <main className="education">
-    <div className="education__background">
-      <Provider>
-        <Consumer>
-          {({ setActiveTab, activeTab }) => (
-            <Fragment>
+    <Provider>
+      <Consumer>
+        {({ setActiveTab, activeTab }) => (
+          <Fragment>
+            <div className="education__background" key={activeTab}>
               <div className="container education__main">
                 <TabContent index="0">
                   <h1>Some shit about bad practices</h1>
@@ -57,17 +57,17 @@ const Materials = () => (
                       <h6>Shit 4</h6>
                     </div>
                     <div className={`tabs__nav-item ${activeTab === 4 ? 'tabs__nav-item--active' : ''}`}>
-                      <Thing>5</Thing>
+                      <Thing big>5</Thing>
                       <h5>GO QUIZ!</h5>
                     </div>
                   </div>
                 </div>
               </div>
-            </Fragment>
-          )}
-        </Consumer>
-      </Provider>
-    </div>
+            </div>
+          </Fragment>
+        )}
+      </Consumer>
+    </Provider>
   </main>
 );
 
