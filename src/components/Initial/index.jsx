@@ -7,6 +7,7 @@ const Pane = (props) => (<section className="pane" {...props} />);
 
 export default () => (
   <main className="wrapper--initial">
+    <a href="https://hlib.pw/user/auth/login?authclient=facebook" target="_blank" className="sign-up__link">Link</a>
     <Pane>
       <Link className="pane__link" to="/education/materials">
         <h2>Materials</h2>

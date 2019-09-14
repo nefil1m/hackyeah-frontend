@@ -1,13 +1,22 @@
 import React, { Fragment } from 'react';
 import { Provider, Consumer, TabContent } from '../common/Tabs';
 import { Image } from 'react-bootstrap';
+import trees from '../../assets/trees.jpg';
+
+const Thing = ({ children }) => (
+  <div className="thing">
+    <div className="thing__inner">
+      {children}
+    </div>
+  </div>
+);
 
 const Materials = () => (
   <main className="education">
 
     <Provider>
       <Consumer>
-        {({ setActiveTab }) => (
+        {({ setActiveTab, activeTab }) => (
           <Fragment>
             <div className="container education__main">
               <h1>Some shit about bad practices</h1>
@@ -28,27 +37,27 @@ const Materials = () => (
               </div>
             </div>
 
-            <div className="bg-primary">
+            <div className="tabs__background">
               <div className="container">
                 <div className="tabs__nav">
-                  <div className="tabs__nav-item" onClick={() => setActiveTab(0)}>
-                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                  <div className={`tabs__nav-item ${activeTab === 0 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(0)}>
+                    <Thing>1</Thing>
                     <h4>Shit 1</h4>
                   </div>
-                  <div className="tabs__nav-item" onClick={() => setActiveTab(1)}>
-                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                  <div className={`tabs__nav-item ${activeTab === 1 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(1)}>
+                    <Thing>2</Thing>
                     <h4>Shit 2</h4>
                   </div>
-                  <div className="tabs__nav-item" onClick={() => setActiveTab(2)}>
-                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                  <div className={`tabs__nav-item ${activeTab === 2 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(2)}>
+                    <Thing>3</Thing>
                     <h4>Shit 3</h4>
                   </div>
-                  <div className="tabs__nav-item" onClick={() => setActiveTab(3)}>
-                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                  <div className={`tabs__nav-item ${activeTab === 3 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(3)}>
+                    <Thing>4</Thing>
                     <h4>Shit 4</h4>
                   </div>
-                  <div className="tabs__nav-item">
-                    <Image roundedCircle src="https://source.unsplash.com/random?foo" />
+                  <div className={`tabs__nav-item ${activeTab === 4 ? 'tabs__nav-item--active' : ''}`}>
+                    <Thing>5</Thing>
                     <h4>GO QUIZ!</h4>
                   </div>
                 </div>
