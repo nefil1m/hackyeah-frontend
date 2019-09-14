@@ -26,24 +26,25 @@ const Butts = ({ history }) => (
             <div className="education__background" key={activeTab}>
               <div className="container education__main">
                 <TabContent index="0">
-                  <h1>hdlajshdalskjdhajsdCOLLECT RECYCLABLE MATERIAL, SAVE THE ENVIRONMENT… AND EARN!</h1>
+                  <h1>COLLECT CIGARETTE BUTTS, SAVE THE ENVIRONMENT… AND EARN!</h1>
                   <h3>But first...Education.</h3>
-                  <p>The mission of cigbutt movement is to eliminate cigarette butts from the face of the earth and  make better use of recyclable material like bottle caps by recycling them back into reusability, or handing them to charities who recycle the materials and buy wheelchairs for disabled children through the profit. You will be able to turn in plastic waste you used into discount coupons, and cash by delivering it to the nearest allocation point while saving the environment at the same time! But you may ask why the effort?</p>
+                  <p>The mission of cigbutt movement is to eliminate cigarette butts from the face of the earth and  make better use of recyclable material. Imagine this: you’re walking down the street in the morning,and you pass by thousands of cigarette butts that harm our beautiful nature and take between 1 month and 15 years to biodegrade! With cigbutt will be able to turn in cigarette butts into discount coupons, and cash by delivering it to the nearest allocation point while saving the environment at the same time! But you may ask why the effort?</p>
                 </TabContent>
                 <TabContent index="1">
                   <h1>Why The Effort?</h1>
-                  <p>How is plastic so bad you might ask? and why should I put any effort into helping? The world is as of now creating about 300 million tons of plastic every year. Unfortunately, although plastic is a valuable item, a considerable lot of these items are made for single-use - with an expected 50 percent of plastic utilized once and discarded.
-Not only is this harmful to the environment and the oceans, but it is also harmful to wildlife - where it impacts nearly 700 species in the ocean, and humans.  As of now, just nine percent of the world's plastic is reused - an issue in light of the fact that most plastics are not biodegradable and normally take over 400 years to biodegrade. The average time for a plastic bottle to completely degrade is at least 450 years.</p>
+                  <p>Butts left in grass and soil can harm nearby plant growth, according to a new study. The study driven by Anglia Ruskin University in Cambridge, England found that a cigarette butt can chop down the germination, or advancement, of plants, adding to worries about disposed of cigarette leftovers as an under-recognized, yet far reaching, pollutant.Cigarette butts cut down the germination accomplishment of grass by 10% and clover by 27%, and the shoot length by 13% and 28%, separately, as indicated by the investigation, which was distributed in the diary Ecotoxicology and Environmental Safety. Weight of cigarettes littered annually up to 800 000 t ( UNEP)  which makes 84% of all cigarettes produced  internationally and 4,7 trillion butts are littered per year - 150 000 butts are littered per second biggest problem is the filters, most of which are made of cellulose acetate, a kind of plastic. That means the filters don’t readily biodegrade, although they do break down — and send thousands of tiny plastic fibers into the environment, waterways and wildlife. Along with the fibers come chemicals like arsenic, benzene and lead. In 10 years there may be more cigarette butts in the ocean than fish Cigarette.
+</p>
                 </TabContent>
                 <TabContent index="2">
                   <h1>How Can I Help?</h1>
-                  <p>Our application will connect you to plastic collection points that will eventually send what they have to recycling service companies like 4Plast,Agraf and ABC System Sp. z oo turning the plastic into reusable forms, further eliminating the need of producing new plastic, and eventually replacing the use of plastic.</p>
+                  <p>Our application will connect you to cigarette filter collection points that will eventually send what they have to recycling service companies like MéGO! (France), turning the filters into industrial-grade raw materials. In Vancouver, where people litter a million cigarette butts a day, was the first city to pioneer this partnership with such a company -  TerraCycle - , installing 110 cigarette butt recycling bins in its downtown area in 2013.
+</p>
                   <h3>What Do I Have To Do?</h3>
                   <p>
-All you need to do is collect enough recyclable materials like bottle caps somewhere in a safebox. Once you have enough - around 1.4kg of bottle caps -  Weight of a bottle cap – 2.3g -- 608 bottle caps - you can take the box to the closest collecting location shown on the map, and an employee will scan your user - qr code - ID. You will automatically buttPoints that you can use as discount coupons for companies such as pyszne.pl, uber,hop.city,strefakursow,gog.com,bus tickets and small amounts of cash. This way, you have contributed to saving the environment, and made you some cash!</p>
+                  All you need to do is  Move the cooled cigarette to a sturdy plastic bag that you can seal. Once you have enough - around 100 grams -  Weight of cigarette butt – 0,17 g -  -- 588 cigarette butts --you can take the bag to the closest collecting location shown on the map, and an employee will scan your user - qr code - ID. You will automatically receive buttPoints that you can use as discount coupons for companies such as pyszne.pl, uber ,hop.city ,strefakursow ,gog.com ,bus tickets and small amounts of cash. This way, you have contributed to saving the environment, and made you some goodies :)!</p>
                 </TabContent>
                 <TabContent index="3">
-                  <h1>Where Am I Supposed To Send The Plastic Waste?</h1>
+                  <h1>Where Am I Supposed To Send The Cigarette Butts?</h1>
                   <p>The locations will be shown in your map once you finish the coming fun quiz!</p>
                 </TabContent>
                 <TabContent index="4">
