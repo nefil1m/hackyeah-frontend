@@ -27,7 +27,7 @@ class App extends Component {
     const { auth: isLoggedIn } = json;
 
     if (isLoggedIn) {
-      window.location = 'http://hlib.pw/site';
+      window.location = 'http://hlib.pw/site/';
     }
   }
 
