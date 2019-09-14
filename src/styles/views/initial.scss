@@ -1,8 +1,46 @@
-.wrapper {
+.wrapper--initial {
   display: flex;
+  height: 100vh;
+  background: black;
 }
 
 .pane {
   flex-basis: 50%;
-  text-align: center;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+
+    &:hover {
+      text-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+
+      & ~ .pane__background {
+        transform: scale(1.05) rotate(3deg);
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.pane__background {
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .3;
+  transition: .3s ease-out;
+  transition-property: opacity, transform;
 }
