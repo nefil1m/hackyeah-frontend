@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import cs from 'classnames';
 
-export default ({ questions }) => {
+export default ({ questions, redirect }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [chosenAnswer, setChosenAnswer] = useState(null);
   const hasMoreQuestions = !!questions[currentQuestionIndex];
 
   useEffect(() => {
     if (!hasMoreQuestions) {
-      window.location = 'www.google.com';
+      redirect();
     }
   });
 

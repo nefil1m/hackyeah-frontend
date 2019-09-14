@@ -17,7 +17,7 @@ const Thing = ({ children, big }) => (
   </div>
 );
 
-const Butts = () => (
+const Butts = ({ history }) => (
   <main className="education">
     <Provider>
       <Consumer>
@@ -47,7 +47,7 @@ All you need to do is collect enough recyclable materials like bottle caps somew
                   <p>The locations will be shown in your map once you finish the coming fun quiz!</p>
                 </TabContent>
                 <TabContent index="4">
-                  <Quiz questions={quiz.materials} />
+                  <Quiz questions={quiz.butts} redirect={() => history.push('/education/success')} />
                 </TabContent>
               </div>
 
