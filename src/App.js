@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './styles/main.scss';
 import Routing from './components/Routing';
+import { auth } from './constants';
 
 class App extends Component {
   constructor() {
@@ -18,7 +19,7 @@ class App extends Component {
   }
 
   async checkAuth() {
-    const response = await fetch('https://hlib.pw/site/is-logged');
+    const response = await fetch(auth.check);
 
     const json = await response.json();
 
@@ -27,7 +28,7 @@ class App extends Component {
     const { auth: isLoggedIn } = json;
 
     if (isLoggedIn) {
-      window.location = 'http://hlib.pw/site/';
+      window.location = auth.redirect;
     }
   }
 
