@@ -8,7 +8,7 @@ const Pane = (props) => (<section className="pane" {...props} />);
 export default () => (
   <main className="wrapper--initial">
     <Pane>
-      <Link className="pane__link" to="/materials">
+      <Link className="pane__link" to="/education/materials">
         <h2>Materials</h2>
       </Link>
       <div
@@ -17,7 +17,7 @@ export default () => (
       />
     </Pane>
     <Pane>
-      <Link className="pane__link" to="/butts">
+      <Link className="pane__link" to="/education/butts">
         <h2>Cigarette butts</h2>
       </Link>
       <div
