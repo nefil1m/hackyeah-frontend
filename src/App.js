@@ -1,14 +1,10 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import './styles/main.scss';
+import Routing from './components/Routing';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Button className="mt-10">Kurwa</Button>
-      </header>
-    </div>
+    <Routing />
   );
 }
 

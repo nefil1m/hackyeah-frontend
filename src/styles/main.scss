@@ -1,2 +1,5 @@
+@import './vendor/_variables';
+@import './vendor/_bootswatch';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import './vendor/bootstrap.min.css'; // theme
+
+@import './views/initial';
