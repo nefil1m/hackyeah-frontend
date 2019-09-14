@@ -68,7 +68,7 @@ All you need to do is collect enough recyclable materials like bottle caps somew
                     </div>
                     <div className={`tabs__nav-item ${activeTab === 3 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(3)}>
                       <Thing><img src={where}/></Thing>
-                      <h6>Shit 4</h6>
+                      <h6>Where?</h6>
                     </div>
                     <div className={`tabs__nav-item ${activeTab === 4 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(4)}>
                       <Thing big>QUIZ</Thing>
