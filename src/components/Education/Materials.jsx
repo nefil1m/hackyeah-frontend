@@ -37,8 +37,8 @@ const Materials = () => (
                   <h1>Some shit about bad practices</h1>
                   <p>Donec id varius risus, nec tincidunt diam. Aenean id ante orci. Cras facilisis fringilla ex faucibus tempus. Vivamus eu orci vel tellus faucibus ultrices nec quis diam. Cras at congue ex, faucibus volutpat dolor. Phasellus in felis at orci pellentesque sagittis. Etiam nec nulla et leo pretium iaculis sed in nunc. Sed non ligula sem. Nullam iaculis sodales erat a condimentum. Cras nec sapien gravida erat finibus cursus quis ac mi.</p>
                 </TabContent>
-                <TabContent index="4" questions={quiz.materials}>
-                  <Quiz />
+                <TabContent index="4">
+                  <Quiz questions={quiz.materials} />
                 </TabContent>
               </div>
 

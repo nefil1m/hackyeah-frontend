@@ -6,7 +6,7 @@ export default {
       correct: false,
     }, {
       text: 'No',
-      correct: false,
+      correct: true,
     }, {
       text: 'Maybe',
       correct: false,
@@ -18,7 +18,7 @@ export default {
       correct: false,
     }, {
       text: 'No',
-      correct: false,
+      correct: true,
     }, {
       text: 'Maybe',
       correct: false,
@@ -30,7 +30,7 @@ export default {
       correct: false,
     }, {
       text: 'No',
-      correct: false,
+      correct: true,
     }, {
       text: 'Maybe',
       correct: false,
