@@ -47,8 +47,8 @@ const Materials = () => (
                     <Image roundedCircle src="https://source.unsplash.com/random" />
                     <h4>Shit 4</h4>
                   </div>
-                  <div className="tabs__nav-item" onClick={() => setActiveTab(3)}>
-                    <Image roundedCircle src="https://source.unsplash.com/random" />
+                  <div className="tabs__nav-item">
+                    <Image roundedCircle src="https://source.unsplash.com/random?foo" />
                     <h4>GO QUIZ!</h4>
                   </div>
                 </div>
