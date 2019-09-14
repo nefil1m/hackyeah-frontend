@@ -8,6 +8,7 @@ export default () => (
     <Switch>
       <Route exact path="/" component={Initial} />
       <Route path="/education/materials" component={Materials} />
+      <Route path="/education/butts" component={Butts} />
     </Switch>
   </Router>
 );
