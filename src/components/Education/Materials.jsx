@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { Provider, Consumer, TabContent } from '../common/Tabs';
-import { Image } from 'react-bootstrap';
 import where from '../../assets/where.png'
 import what from '../../assets/what.png'
 import how from '../../assets/how.png'
@@ -46,25 +45,26 @@ All you need to do is collect enough recyclable materials like bottle caps somew
 
               <div className="tabs__background">
                 <div className="container">
+                  {activeTab !== 4 && <button className="next" onClick={() => setActiveTab(activeTab + 1)}>Next</button>}
                   <div className="tabs__nav">
                     <div className={`tabs__nav-item ${activeTab === 0 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(0)}>
-                      <Thing><img src={what}/></Thing>
+                      <Thing><img alt="" src={what}/></Thing>
                      <h6>What</h6>
                     </div>
                     <div className={`tabs__nav-item ${activeTab === 1 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(1)}>
-                      <Thing><img src={why}/></Thing>
+                      <Thing><img alt="" src={why}/></Thing>
                       <h6>Why?</h6>
                     </div>
                     <div className={`tabs__nav-item ${activeTab === 2 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(2)}>
-                      <Thing><img src={how}/></Thing>
+                      <Thing><img alt="" src={how}/></Thing>
                       <h6>How?</h6>
                     </div>
                     <div className={`tabs__nav-item ${activeTab === 3 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(3)}>
-                      <Thing><img src={where}/></Thing>
+                      <Thing><img alt="" src={where}/></Thing>
                       <h6>Where?</h6>
                     </div>
                     <div className={`tabs__nav-item ${activeTab === 4 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(4)}>
-                      <Thing big><img src={play}/></Thing>
+                      <Thing big><img alt="" src={play}/></Thing>
                       <h5>GO QUIZ!</h5>
                     </div>
                   </div>

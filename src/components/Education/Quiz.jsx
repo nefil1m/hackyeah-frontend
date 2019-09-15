@@ -25,10 +25,11 @@ export default ({ questions, redirect }) => {
   };
 
   return (
-    <div>
+    <div className="quiz">
       <h1>{question}</h1>
       {answers.map((answer, i) => (
         <p
+          key={i}
           onClick={() => chooseAnswer(answer)}
           className={cs('answer', {
             'answer--correct': answer === chosenAnswer && answer.correct,

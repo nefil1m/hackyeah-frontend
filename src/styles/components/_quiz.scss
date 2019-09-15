@@ -1,5 +1,10 @@
+.quiz {
+  text-shadow: 0 2px 5px rgba(#000, .2);
+}
+
 .answer {
   cursor: pointer;
+  font-size: 18px;
 
   &--correct {
     color: green !important;

@@ -8,7 +8,7 @@ const Pane = (props) => (<section className="pane" {...props} />);
 
 export default () => (
   <main className="wrapper--initial">
-    <a href={auth.trigger} target="_blank" className="sign-in__link">Sign in</a>
+    <a href={auth.trigger} target="_blank" rel="noopener noreferrer" className="sign-in__link">Sign in</a>
     <Pane>
       <Link className="pane__link" to="/education/materials">
         <h2>Materials</h2>
