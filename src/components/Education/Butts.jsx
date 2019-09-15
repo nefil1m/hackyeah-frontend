@@ -6,6 +6,7 @@ import where from '../../assets/where.png'
 import what from '../../assets/what.png'
 import how from '../../assets/how.png'
 import why from '../../assets/why.png'
+import play from '../../assets/play.png'
 import quiz from '../../data/quiz';
 import Quiz from './Quiz';
 import Thing from './Thing';
@@ -65,7 +66,7 @@ const Butts = ({ history }) => (
                       <h6>Where?</h6>
                     </div>
                     <div className={`tabs__nav-item ${activeTab === 4 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(4)}>
-                      <Thing big>QUIZ</Thing>
+                      <Thing big><img src={play}/></Thing>
                       <h5>GO QUIZ!</h5>
                     </div>
                   </div>
