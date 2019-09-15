@@ -22,7 +22,7 @@
       left: 0;
       animation-name: blush;
       animation-iteration-count: 1;
-      animation-duration: 15s;
+      animation-duration: 30s;
       animation-timing-function: linear;
       animation-fill-mode: forwards;
     }
@@ -182,7 +182,7 @@
   }
 
   to {
-    opacity: .3;
+    opacity: .7;
     transform: scale(1.2);
     // background-size: $x / 1.75 $y / 1.75;
   }

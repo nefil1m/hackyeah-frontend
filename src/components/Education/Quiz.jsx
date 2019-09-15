@@ -30,7 +30,7 @@ export default ({ questions, redirect }) => {
       {answers.map((answer, i) => (
         <p
           onClick={() => chooseAnswer(answer)}
-          className={cs({
+          className={cs('answer', {
             'answer--correct': answer === chosenAnswer && answer.correct,
             'answer--incorrect': chosenAnswer === answer && !answer.correct,
           })}
