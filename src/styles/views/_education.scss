@@ -11,9 +11,10 @@
 
     &:before {
       content: '';
-      background-size: 100% 100%;
+      // background-size: 100% 100%;
+      background-size: cover;
       background-position: center center;
-      background-image: url('../../assets/trees.jpg');
+      background-image: url('../../assets/trees2.jpg');
       position: absolute;
       top: 0;
       right: 0;
@@ -176,11 +177,13 @@
 
   from {
     opacity: .1;
-    background-size: $x / 2 $y / 2;
+    transform: scale(1);
+    // background-size: $x / 2 $y / 2;
   }
 
   to {
     opacity: .3;
-    background-size: $x / 1.75 $y / 1.75;
+    transform: scale(1.2);
+    // background-size: $x / 1.75 $y / 1.75;
   }
 }

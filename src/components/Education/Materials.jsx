@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { Provider, Consumer, TabContent } from '../common/Tabs';
 import { Image } from 'react-bootstrap';
-import trees from '../../assets/trees2.jpg';
 import where from '../../assets/where.png'
 import what from '../../assets/what.png'
 import how from '../../assets/how.png'
