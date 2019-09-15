@@ -52,7 +52,7 @@ export default {
 
 }],
   butts: [{
-    question: '1. asdhasljdhalskjdhaskjd it take a simple plastic bottle to biodegrade?',
+    question: '1. About how long it takes a simple plastic bottle to biodegrade?',
     answers: [{
       text: '10 years',
       correct: false,

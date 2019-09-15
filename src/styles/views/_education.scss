@@ -171,6 +171,16 @@
   }
 }
 
+.next {
+  position: absolute;
+  top: -110px;
+  right: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #fff;
+  padding: 13px 25px;
+}
+
 @keyframes blush {
   $x: 3654px;
   $y: 5473px;

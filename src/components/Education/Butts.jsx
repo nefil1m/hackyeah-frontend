@@ -47,6 +47,7 @@ const Butts = ({ history }) => (
 
               <div className="tabs__background">
                 <div className="container">
+                  {activeTab !== 4 && <button className="next" onClick={() => setActiveTab(activeTab + 1)}>Next</button>}
                   <div className="tabs__nav">
                     <div className={`tabs__nav-item ${activeTab === 0 ? 'tabs__nav-item--active' : ''}`} onClick={() => setActiveTab(0)}>
                       <Thing><img src={what}/></Thing>
