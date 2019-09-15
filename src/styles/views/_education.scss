@@ -2,6 +2,10 @@
   color: #eee;
   background: black;
 
+  * {
+    text-shadow: 0 7px 5px rgba(0, 0, 0, 0.6);
+  }
+
   &__background {
     padding-top: 50px;
     height: 100vh;
@@ -135,6 +139,7 @@
   font-size: 24px;
   font-weight: bold;
   transition: all .2s ease-out;
+  box-shadow: 0 0 10px 5px rgba(#000, .3);
 
   &--big {
     font-size: 32px;
